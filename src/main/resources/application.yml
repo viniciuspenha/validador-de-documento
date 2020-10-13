@@ -1,2 +1,6 @@
 server:
   port: 8888
+
+validacao.queue: validacao
+
+conta.url: http://localhost:8080/bancodigital/conta

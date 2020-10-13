@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -12,23 +14,20 @@ import lombok.*;
 @ToString
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class EnderecoDTO {
+public class ContaDTO {
 
-    @JsonProperty("cep")
-    private String cep;
+    @JsonProperty("clienteId")
+    private Long clienteId;
 
-    @JsonProperty("rua")
-    private String rua;
+    @JsonProperty("agencia")
+    private String agencia;
 
-    @JsonProperty("bairro")
-    private String bairro;
+    @JsonProperty("conta")
+    private String conta;
 
-    @JsonProperty("complemento")
-    private String complemento;
+    @JsonProperty("codigoBanco")
+    private String codigoBanco;
 
-    @JsonProperty("cidade")
-    private String cidade;
-
-    @JsonProperty("estado")
-    private String estado;
+    @JsonProperty("saldo")
+    private BigDecimal saldo;
 }

@@ -39,11 +39,15 @@
             </exclusions>
         </dependency>
 
-        <!--suporte-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+            <version>1.5.8.RELEASE</version>
         </dependency>
     </dependencies>
 
